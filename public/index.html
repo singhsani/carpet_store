@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Loomhouse – Carpets & Rugs</title>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bar" aria-label="Offers"><div><span>Cash on delivery available</span><span>Free shipping across India</span><span>Extra 10% off prepaid orders</span><span>Use code NEW10 for 10% off</span></div></div>
+<header><div class="wrap nav">
+<a class="logo" href="#top">VARISTALIVING CARPETS</a>
+<nav>
+    <a href="#shop">Shop</a>
+    <a href="#rooms">Rooms</a>
+    <a href="#visit">Showroom</a>
+    <a href="#contact">Contact</a>
+</nav>
+<button class="ib" id="cartBtn" aria-label="Open cart">Cart<span id="cartN">0</span></button>
+</div></header>
+
+<main id="top">
+<div class="hero" id="hero"></div>
+
+<section id="rooms"><div class="wrap"><h2>Shop by room</h2><div class="rooms" id="rooms-grid"></div></div></section>
+
+<section id="shop" style="padding-top:0"><div class="wrap">
+<h2>Bestsellers</h2>
+<div class="filters" id="adminBar"></div>
+<div class="filters" id="fType" role="group" aria-label="Filter by type"></div>
+<div class="filters" id="fColor" role="group" aria-label="Filter by colour"></div>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<section class="show" id="visit"><div class="wrap">
+<div class="art" style="aspect-ratio:4/3;border-radius:12px;overflow:hidden" id="showArt"></div>
+<div>
+<h2>Visit the showroom</h2>
+<p class="m">Feel the pile and see true colours before you buy. Replace the details below with your own store.</p>
+<dl><dt>Hours</dt><dd>Mon–Sun, 10:30 am – 7 pm</dd><dt>Phone</dt><dd>+91 00000 00000</dd><dt>Address</dt><dd>Your street, your city</dd></dl>
+</div></div></section>
+</main>
+
+<footer id="contact"><div class="wrap">
+<div><b class="logo" style="font-size:20px">Loomhouse</b><p class="m">Hand tufted, jute, shaggy and irregular carpets.</p></div>
+<form class="nl" id="nl"><input type="email" required placeholder="Your email" aria-label="Email"><button class="cta" type="submit">Get offers</button><span class="m" id="nlMsg" role="status"></span></form>
+</div></footer>
+
+<div id="modal" role="dialog" aria-modal="true" aria-label="Product details"><button class="ib mclose" id="mclose">Close</button><div id="mbody"></div></div>
+<div id="shade"></div>
+<aside id="drawer" aria-label="Shopping cart" aria-hidden="true">
+<div class="dh"><h3>Your cart</h3><button class="ib" id="closeCart">Close</button></div>
+<div id="items"></div>
+<div class="df">
+<div class="row"><span>Subtotal</span><span id="sub">₹0</span></div>
+<div class="row"><span>Discount</span><span id="disc">–₹0</span></div>
+<div class="row"><b>Total</b><b id="tot">₹0</b></div>
+<input id="code" placeholder="Discount code (try NEW10)" aria-label="Discount code">
+<select id="pay" aria-label="Payment method"><option value="prepaid">Prepaid (extra 10% off)</option><option value="cod">Cash on delivery</option></select>
+<button class="cta" id="checkout">Order on WhatsApp</button>
+<span class="m" id="cmsg" role="status"></span>
+</div>
+</aside>
+
+<script src="app.js"></script>
+</body>
+</html>
